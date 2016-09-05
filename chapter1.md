@@ -11,7 +11,7 @@ Every TICKscript will have either a `stream` or `batch` variable defined dependi
 
 ## **Pipelines**
 
-Kapacitor uses TICKscripts to define data processing pipelines. A pipeline is set of nodes that process data and edges that connect the nodes. Pipelines in Kapacitor are directed acyclic graphs \([DAGs](https://en.wikipedia.org/wiki/Directed_acyclic_graph)\) meaning each edge has a direction that data flows and there cannot be any cycles in the pipeline.
+Kapacitor 使用 TICKscripts 来定义数据处理pipelines。 A pipeline is set of nodes that process data and edges that connect the nodes. Pipelines in Kapacitor are 有向无环图directed acyclic graphs \([DAGs](https://en.wikipedia.org/wiki/Directed_acyclic_graph)\) meaning each edge has a direction that data flows and there cannot be any cycles in the pipeline.
 
 Each edge has a type, one of the following:
 
@@ -36,6 +36,4 @@ stream
         .tag('kapacitor', 'true')
         .tag('version', '0.2')
 ```
-
-
 
